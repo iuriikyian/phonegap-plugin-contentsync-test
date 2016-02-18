@@ -1,0 +1,26 @@
+{
+  "name": "phonegap-plugin-contentsync-test",
+  "version": "0.0.1",
+  "description": "contentsync plugin test",
+  "bundle": "phonegap.plugin.contentsync.test.app",
+  "repository": "",
+  "author": "Iurii Kyian <kyyany@yahoo.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-compass": "~1.0.3",
+    "grunt-contrib-compress": "^1.0.0",
+    "grunt-contrib-copy": "~0.8.1",
+    "grunt-contrib-jshint": "~0.11.3",
+    "grunt-contrib-jst": "~0.6.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-exec": "~0.4.6",
+    "grunt-finbrain-tools": "https://github.com/finebraincom/grunt-finebrain-tools.git",
+    "grunt-replace": "^0.11.0",
+    "phonegap": "5.3.1",
+    "underscore": "~1.8.3"
+  }
+}

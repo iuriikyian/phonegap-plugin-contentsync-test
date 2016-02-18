@@ -1,0 +1,9 @@
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.message {
+    width: 200px;
+    border solid 1px #aaa;
+    margin: 0 auto;
+}

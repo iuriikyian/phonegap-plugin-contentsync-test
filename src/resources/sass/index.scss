@@ -1,0 +1,17 @@
+// screen sizes from bootstrap
+$sm-size : 768px;
+$md-size : 992px;
+$lg-size : 1200px;
+
+
+
+@import "home-view";
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+	display: none;
+}
