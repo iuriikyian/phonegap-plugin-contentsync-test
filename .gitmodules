@@ -1,0 +1,4 @@
+[submodule "src/js/common-services"]
+	path = src/js/common-services
+	url = https://gitlab.com/medical-insights/common-services.git
+	branch = jquery
