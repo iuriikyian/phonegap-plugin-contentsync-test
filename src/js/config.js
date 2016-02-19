@@ -61,9 +61,10 @@ console.log('configuration finished');
 
 var config = {};
 
-require(['App'], function(App){
+require(['App', 'config-services'], function(App, configServices){
     'use strict';
 	console.log('starting app');
     var app = new App();
+    config.services = configServices;
 	app.initialize(config);
 });

@@ -31,5 +31,25 @@
         width: 100%;
         overflow-y: scroll;
         background-color: #336677;
+
+        .btn {
+            padding: 10px;
+            border: solid 1px #aaa;
+            border-radius: 5px;
+            margin: 10px;
+            color: #eee;
+            font-weight: bold;
+        }
+        .log {
+            position: absolute;
+            margin: 5px;
+            padding: 5px;
+            overflow: auto;
+            border: solid 1px #aaa;
+            left: 0;
+            right: 0;
+            top: 120px;
+            bottom: 0;
+        }
     }
 }

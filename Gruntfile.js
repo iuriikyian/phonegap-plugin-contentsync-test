@@ -240,7 +240,11 @@ module.exports = function(grunt){
             'plugin-contentsync' : {
                 cwd : '.',
                 command : '<%= phonegap %> plugin add phonegap-plugin-contentsync'
-            }
+            },
+            'plugin-whitelist' : {
+                cwd : '.',
+                command : '<%= phonegap %> plugin add cordova-plugin-whitelist@1.2.1'
+            },
         },
 
         jshint: { //TODO: review
@@ -433,6 +437,11 @@ module.exports = function(grunt){
         'exec:plugin-contentsync'
     ]);
 
+    grunt.registerTask('install-plugins-android', [
+        'exec:plugin-contentsync',
+        'exec:plugin-whitelist'
+    ]);
+
     grunt.registerTask('build-browser',
         'create phonegap app for browser',
         [
@@ -486,7 +495,7 @@ module.exports = function(grunt){
         'clean:phonegap-generated-app',
         'build',
         'exec:add-platform-android',
-        'install-plugins',
+        'install-plugins-android',
         'replace',
         'exec:build-android'
     ]);
