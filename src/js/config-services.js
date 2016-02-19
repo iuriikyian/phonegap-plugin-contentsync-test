@@ -26,7 +26,9 @@ define([
             settings : {
                 statusUrl : srv_host + '/status',
                 contentVersionField : 'contentVersion',
-                contentUrl : srv_host + '/content.zip',
+                //contentUrl : srv_host + '/content.zip',
+                contentUrl : srv_host + '/status',
+                contentUrlField : 'url',
                 contentId : 'app',
                 pstorageName : 'app-sync-pstorage'
             }

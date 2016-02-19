@@ -513,7 +513,8 @@ module.exports = function(grunt){
             var statusFile = 'content-srv/public/status';
             grunt.file.write(statusFile, JSON.stringify(
                 {
-                    contentVersion : version
+                    contentVersion : version,
+                    url : 'http://3000.192.168.1.58.xip.io/content.zip'
                 }
             ));
             grunt.log.ok('created status file: ' + statusFile);
